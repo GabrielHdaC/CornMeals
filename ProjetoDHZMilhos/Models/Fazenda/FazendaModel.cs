@@ -2,10 +2,10 @@
 {
     public class FazendaModel
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
         public string Name { get; set; }
         public string Endereco {  get; set; }
-        public double Tamanho { get; set; }
+        public string Tamanho { get; set; }
 
     }
 }

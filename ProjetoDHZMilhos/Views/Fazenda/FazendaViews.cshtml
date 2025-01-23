@@ -1,0 +1,29 @@
+﻿@using ProjetoDHZMilhos.Models.Fazenda
+@model FazendasModel
+
+<div>
+
+    <h1>Fazendas</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Endereço</th>
+                <th>Tamanho(hectares)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var fazenda in Model.Fazendas) 
+            {
+                <tr>
+                    <td>@fazenda.ID</td>
+                    <td>>@fazenda.Name</td>
+                    <td>@fazenda.Endereco</td>
+                    <td>>@fazenda.Tamanho</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

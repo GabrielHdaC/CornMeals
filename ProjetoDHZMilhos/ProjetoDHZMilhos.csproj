@@ -6,4 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Views\Fazenda\Fazenda.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Fazenda\FazendaViews.cshtml" />
+  </ItemGroup>
+
 </Project>

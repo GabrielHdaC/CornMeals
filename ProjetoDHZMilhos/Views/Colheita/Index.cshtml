@@ -4,7 +4,7 @@
 
 <div>
 
-    <h1>Fazendas</h1>
+    <h1>Colheita</h1>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -20,7 +20,7 @@
             {
                 <tr>
                     <td>@colheita.Id</td>
-                    <td>@colheita.Data_Colheita</td>
+                    <td>@colheita.Data_Colheita.ToString("yyyy/MM/dd")</td>
                     <td>@colheita.Plantacao_Id</td>
                     <td>@colheita.Qualidade</td>
                     <td>@colheita.Quantidade_Colhida</td>

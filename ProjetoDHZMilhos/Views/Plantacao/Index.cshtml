@@ -1,0 +1,31 @@
+﻿@using ProjetoDHZMilhos.Models.Plantacao
+@model PlantacoesModel
+
+<div>
+
+    <h1>Plantacao</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Fazenda_ID</th>
+                <th>Nome</th>
+                <th>Area</th>
+                <th>Tipo_Milho</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var plantacao in Model.Plantacoes)
+            {
+                <tr>
+                    <td>@plantacao.ID</td>
+                    <td>@plantacao.Fazenda_ID</td>
+                    <td>@plantacao.Nome</td>
+                    <td>@plantacao.Area</td>
+                    <td>@plantacao.Tipo_Milho</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

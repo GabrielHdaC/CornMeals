@@ -19,7 +19,7 @@ namespace ProjetoDHZMilhos.Controllers
                 Plantacoes = plantacoes
             };
 
-            return View();
+            return View(model);
         }
 
         

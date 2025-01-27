@@ -1,0 +1,33 @@
+﻿@using ProjetoDHZMilhos.Models.Plantio
+@model PlantiosModel
+
+<div>
+
+    <h1>plantio</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>ID Plantação</th>
+                <th>Data do Plantio</th>
+                <th>Tipo do Milho</th>
+                <th>Quantidade Plantada</th>
+                <th>Hectares Utilizados</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var plantio in Model.Plantios)
+            {
+                <tr>
+                    <td>@plantio.Id</td>
+                    <td>@plantio.Plantacao_Id</td>
+                    <td>@plantio.Data_Plantio.ToString("yyyy/MM/dd")</td>
+                    <td>@plantio.Tipo_Milho</td>
+                    <td>@plantio.Quantidade_Sementes</td>
+                    <td>@plantio.Hectares_Plantados</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

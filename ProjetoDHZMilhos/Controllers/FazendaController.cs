@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProjetoDHZMilhos.Models.Fazenda;
+using ProjetoDHZMilhos.Models.Plantacao;
 
 namespace ProjetoDHZMilhos.Controllers
 {

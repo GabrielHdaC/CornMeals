@@ -1,0 +1,41 @@
+﻿@using ProjetoDHZMilhos.Models.EspecieMilho
+@model EspeciesMilhoModel
+
+<div>
+
+    <h1>Espécies Milho</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Categoria</th>
+                <th>Cor Externa</th>
+                <th>Rendimento Industrial</th>
+                <th>Uniformidade da Colheita</th>
+                <th>Estação de Transplante</th>
+                <th>Estação de Plantio</th>
+                <th>Estação de Colheita</th>
+                <th>Biotech</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var especieMilho in Model.EspeciesMilho)
+            {
+                <tr>
+                    <td>@especieMilho.ID</td>
+                    <td>@especieMilho.Nome</td>
+                    <td>@especieMilho.Categoria</td>
+                    <td>@especieMilho.CorExterna</td>
+                    <td>@(especieMilho.RendimentoIndustrial)%</td>
+                    <td>@especieMilho.UniformidadeColheita</td>
+                    <td>@especieMilho.EstacaoTransplante</td>
+                    <td>@especieMilho.EstacaoPlantio</td>
+                    <td>@especieMilho.EstacaoColheita</td>
+                    <td>@especieMilho.Biotech</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

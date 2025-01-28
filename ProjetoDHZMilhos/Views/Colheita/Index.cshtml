@@ -24,6 +24,9 @@
                     <td>@colheita.Plantacao_Id</td>
                     <td>@colheita.Qualidade</td>
                     <td>@colheita.Quantidade_Colhida</td>
+                    <td>
+                        <a type="button" class="btn btn-warning" asp-controller="Carros" asp-action="Record" asp-route-id="@colheita.Id">Editar</a>
+                    </td>
                 </tr>
             }
         </tbody>

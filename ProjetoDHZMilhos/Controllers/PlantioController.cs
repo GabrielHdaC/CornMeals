@@ -15,7 +15,7 @@ namespace ProjetoDHZMilhos.Controllers
                     Id = 1,
                     Plantacao_Id = 1,
                     Data_Plantio = new DateTime(2025, 1, 27), 
-                    Tipo_Milho = "feio",
+                    Tipo_Milho = "Milho Pipoca",
                     Quantidade_Sementes = 5000,
                     Hectares_Plantados = 100,
                 }

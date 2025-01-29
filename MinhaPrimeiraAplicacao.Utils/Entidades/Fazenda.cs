@@ -15,7 +15,7 @@ namespace MinhaPrimeiraAplicacao.Utils.Entidades
         public int ID { get; set; }
         public string Nome { get; set; }
         public string Endereco { get; set; }
-        public string Tamanho { get; set; }
+        public int Tamanho { get; set; }
 
         public static Fazenda Get(int id)
         {
@@ -34,7 +34,7 @@ namespace MinhaPrimeiraAplicacao.Utils.Entidades
                         ID = reader.GetInt32("ID"),
                         Nome = reader.GetString("NOME"),
                         Endereco = reader.GetString("ENDERECO"),
-                        Tamanho = reader.GetString("TAMANHO")
+                        Tamanho = reader.GetInt32("TAMANHO")
                     };
                 }
             }
@@ -59,7 +59,7 @@ namespace MinhaPrimeiraAplicacao.Utils.Entidades
                         ID = reader.GetInt32("ID"), 
                         Nome = reader.GetString("NOME"),
                         Endereco = reader.GetString("ENDERECO"),
-                        Tamanho = reader.GetString("TAMANHO")
+                        Tamanho = reader.GetInt32("TAMANHO")
                     });
                 }
             }

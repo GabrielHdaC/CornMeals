@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MinhaPrimeiraAplicacao.Utils.Entidades;
 using ProjetoDHZMilhos.Models.Fazenda;
 using ProjetoDHZMilhos.Models.Plantacao;
 
@@ -8,19 +9,20 @@ namespace ProjetoDHZMilhos.Controllers
     {
         public IActionResult Index()
         {
+            var model = new FazendasModel();
+            model.Fazendas = new List<FazendaModel>();
 
-            var fazendas = new List<FazendaModel>()
-            {
-                new FazendaModel() { ID = 1, Endereco = "Rua das Flores, 123 Bairro Primavera, Cidade Bela Estado Encantado, Brasil",
-                Name = "Fazenda BlackStone", Tamanho = "500 hectares"}
-            };
+            var fazendas = Fazenda.GetAll();
 
-            var model = new FazendasModel()
-            {
-                Fazendas = fazendas
-            };
+            
+            model.Fazendas = fazendas.Select(fazendaEntidade => new FazendaModel(fazendaEntidade)).ToList();
 
             return View(model);
+        }
+
+        public IActionResult Record(long id)
+        {
+            return View(null);
         }
     }
 }

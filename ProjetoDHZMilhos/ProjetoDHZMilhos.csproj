@@ -14,4 +14,8 @@
     <Content Remove="Views\Fazenda\FazendaViews.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MinhaPrimeiraAplicacao.Utils\MinhaPrimeiraAplicacao.Utils.csproj" />
+  </ItemGroup>
+
 </Project>

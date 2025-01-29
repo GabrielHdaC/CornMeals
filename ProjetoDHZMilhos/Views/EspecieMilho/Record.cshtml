@@ -1,0 +1,59 @@
+﻿@using ProjetoDHZMilhos.Models.EspecieMilho
+@model EspecieMilhoModel
+
+<div>
+    <h3>Espécie Milho</h3>
+    <form asp-controller="EspeciesMilho" asp-action="Save" method="post">
+        <input type="hidden" asp-for="ID" />
+        <div class="form-group">
+            <label>Nome</label>
+            <input type="text" id="nome" class="form-control" asp-for="Nome" />
+        </div>
+        <div class="form-group">
+            <label>Categoria do Milho</label>
+            @Html.DropDownListFor(
+                     model => model.Categoria,
+                     new SelectList(ViewBag.CategoriasMilho, "Value", "Text"),
+                     "- Selecione -",
+                     new { @class = "form-control" }
+                     )
+        </div>
+        <div class="form-group">
+            <label>Cor Externa</label>
+            <input type="text" id="corExterna" class="form-control" asp-for="CorExterna" />
+        </div>
+        <div class="form-group">
+            <label>Rendimento Industrial</label>
+            <input type="number" id="rendmentoIndustrial" class="form-control" asp-for="RendimentoIndustrial" />
+        </div>
+        <div class="form-group">
+            <label>Uniformidade da Colheita</label>
+            <input type="text" id="uniformidadeColheita" class="form-control" asp-for="UniformidadeColheita" />
+        </div>
+        <div class="form-group">
+            <label>Estação de Transplante</label>
+            <input type="text" id="estacaoTransplante" class="form-control" asp-for="EstacaoTransplante" />
+        </div>
+        <div class="form-group">
+            <label>Estação de Plantio</label>
+            <input type="text" id="estacaoPlantio" class="form-control" asp-for="EstacaoPlantio" />
+        </div>
+        <div class="form-group">
+            <label>Estação de Colheita</label>
+            <input type="text" id="estacaoColheita" class="form-control" asp-for="EstacaoColheita" />
+        </div>
+        <div class="form-group">
+            <label>Estação de Colheita</label>
+            <input type="text" id="estacaoColheita" class="form-control" asp-for="EstacaoColheita" />
+        </div>
+        <div class="form-group">
+            <label>BioTech</label>
+            <div>
+                <label>@Html.RadioButtonFor(model => model.Biotech, true) Sim </label>
+                <label>@Html.RadioButtonFor(model => model.Biotech, false) Não </label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary float-end m-1">Salvar</button>
+        <a type="button" class="btn btn-secondary float-end m-1" asp-controller="EspeciesMilho" asp-action="Index">Voltar</a>
+    </form>
+</div>

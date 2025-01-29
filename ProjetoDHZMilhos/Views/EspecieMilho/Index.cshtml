@@ -17,6 +17,7 @@
                 <th>Estação de Plantio</th>
                 <th>Estação de Colheita</th>
                 <th>Biotech</th>
+                <th>Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -33,9 +34,12 @@
                     <td>@especieMilho.EstacaoPlantio</td>
                     <td>@especieMilho.EstacaoColheita</td>
                     <td>@especieMilho.Biotech</td>
+                    <td>
+                        <a type="button" class="btn btn-info" asp-controller="EspecieMilho" asp-action="Record" asp-route-id="@especieMilho.ID">Editar</a>
+                    </td>
                 </tr>
             }
         </tbody>
     </table>
-
+    <a type="button" class="btn btn-info float-end" asp-controller="EspecieMilho" asp-action="PaginaAdicionar">Adicionar</a>
 </div>

@@ -2,28 +2,35 @@
 @model FazendasModel
 
 <div>
-
     <h1>Fazendas</h1>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>Endereço</th>
-                <th>Tamanho(hectares)</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var fazenda in Model.Fazendas)
-            {
-                <tr>
-                    <td>@fazenda.ID</td>
-                    <td>@fazenda.Nome</td>
-                    <td>@fazenda.Endereco</td>
-                    <td>@fazenda.Tamanho</td>
-                </tr>
-            }
-        </tbody>
-    </table>
 
+    @if (Model.Fazendas != null && Model.Fazendas.Any())
+    {
+        <table class="table table-striped">
+            <caption>Lista de Fazendas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Endereço</th>
+                    <th scope="col">Tamanho (hectares)</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var fazenda in Model.Fazendas)
+                {
+                    <tr>
+                        <td>@fazenda.ID</td>
+                        <td>@fazenda.Nome</td>
+                        <td>@fazenda.Endereco</td>
+                        <td>@fazenda.Tamanho</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>Não há fazendas cadastradas no momento.</p>
+    }
 </div>

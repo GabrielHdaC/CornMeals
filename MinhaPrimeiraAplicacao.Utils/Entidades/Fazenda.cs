@@ -12,31 +12,43 @@ namespace MinhaPrimeiraAplicacao.Utils.Entidades
 {
     public class Fazenda
     {
-        public int ID { get; set; }
-        public string Nome { get; set; }
-        public string Endereco { get; set; }
+        public int  ID { get; set; }
+        public string Nome { get; set; } = string.Empty;
+        public string Endereco { get; set; } = string.Empty;
         public int Tamanho { get; set; }
 
         public static Fazenda Get(int id)
         {
-
-            using (MySqlConnection conn = new MySqlConnection(DBConnection.CONNECTION_STRING))
+            try
             {
-                conn.Open();
-                var query = $"SELECT ID, NOME, ENDERECO, TAMANHO FROM FAZENDA WHERE ID = {id}";
-                var cmd = new MySqlCommand(query, conn);
-
-                var reader = cmd.ExecuteReader();
-                if (reader.Read())
+                using (MySqlConnection conn = new MySqlConnection(DBConnection.CONNECTION_STRING))
                 {
-                    return new Fazenda()
+                    conn.Open();
+                    var query = "SELECT ID, NOME, ENDERECO, TAMANHO FROM FAZENDA WHERE ID = @id";
+
+                    using (var cmd = new MySqlCommand(query, conn))
                     {
-                        ID = reader.GetInt32("ID"),
-                        Nome = reader.GetString("NOME"),
-                        Endereco = reader.GetString("ENDERECO"),
-                        Tamanho = reader.GetInt32("TAMANHO")
-                    };
+                        cmd.Parameters.AddWithValue("@id", id);
+
+                        using (var reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                return new Fazenda
+                                {
+                                    ID = reader.GetInt32("ID"),
+                                    Nome = reader.GetString("NOME"),
+                                    Endereco = reader.GetString("ENDERECO"),
+                                    Tamanho = reader.GetInt32("TAMANHO")
+                                };
+                            }
+                        }
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao buscar fazenda: {ex.Message}");
             }
 
             return null;
@@ -46,22 +58,34 @@ namespace MinhaPrimeiraAplicacao.Utils.Entidades
         {
             var result = new List<Fazenda>();
 
-            using (MySqlConnection conn = new MySqlConnection(DBConnection.CONNECTION_STRING))
+            try
             {
-                conn.Open();
-                var query = "SELECT ID, NOME, ENDERECO, TAMANHO FROM FAZENDA";
-                var cmd = new MySqlCommand(query, conn);
-
-                var reader = cmd.ExecuteReader();
-                while (reader.Read())
+                using (MySqlConnection conn = new MySqlConnection(DBConnection.CONNECTION_STRING))
                 {
-                    result.Add(new Fazenda { 
-                        ID = reader.GetInt32("ID"), 
-                        Nome = reader.GetString("NOME"),
-                        Endereco = reader.GetString("ENDERECO"),
-                        Tamanho = reader.GetInt32("TAMANHO")
-                    });
+                    conn.Open();
+                    var query = "SELECT ID, NOME, ENDERECO, TAMANHO FROM FAZENDA";
+
+                    using (var cmd = new MySqlCommand(query, conn))
+                    {
+                        using (var reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                result.Add(new Fazenda
+                                {
+                                    ID = reader.GetInt32("ID"),
+                                    Nome = reader.GetString("NOME"),
+                                    Endereco = reader.GetString("ENDERECO"),
+                                    Tamanho = reader.GetInt32("TAMANHO")
+                                });
+                            }
+                        }
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao buscar todas as fazendas: {ex.Message}");
             }
 
             return result;

@@ -11,3 +11,16 @@ C:\Users\gabriel.cunha7\Desktop\CornMeals\MinhaPrimeiraAplicacao.Utils\obj\Debug
 C:\Users\gabriel.cunha7\Desktop\CornMeals\MinhaPrimeiraAplicacao.Utils\obj\Debug\net8.0\refint\MinhaPrimeiraAplicacao.Utils.dll
 C:\Users\gabriel.cunha7\Desktop\CornMeals\MinhaPrimeiraAplicacao.Utils\obj\Debug\net8.0\MinhaPrimeiraAplicacao.Utils.pdb
 C:\Users\gabriel.cunha7\Desktop\CornMeals\MinhaPrimeiraAplicacao.Utils\obj\Debug\net8.0\ref\MinhaPrimeiraAplicacao.Utils.dll
+C:\Users\gabri\OneDrive\Desktop\CM\CornMeals\MinhaPrimeiraAplicacao.Utils\bin\Debug\net8.0\MinhaPrimeiraAplicacao.Utils.deps.json
+C:\Users\gabri\OneDrive\Desktop\CM\CornMeals\MinhaPrimeiraAplicacao.Utils\bin\Debug\net8.0\MinhaPrimeiraAplicacao.Utils.dll
+C:\Users\gabri\OneDrive\Desktop\CM\CornMeals\MinhaPrimeiraAplicacao.Utils\bin\Debug\net8.0\MinhaPrimeiraAplicacao.Utils.pdb
+C:\Users\gabri\OneDrive\Desktop\CM\CornMeals\MinhaPrimeiraAplicacao.Utils\obj\Debug\net8.0\MinhaPrimeiraAplicacao.Utils.csproj.AssemblyReference.cache
+C:\Users\gabri\OneDrive\Desktop\CM\CornMeals\MinhaPrimeiraAplicacao.Utils\obj\Debug\net8.0\MinhaPrimeiraAplicacao.Utils.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\OneDrive\Desktop\CM\CornMeals\MinhaPrimeiraAplicacao.Utils\obj\Debug\net8.0\MinhaPrimeiraAplicacao.Utils.AssemblyInfoInputs.cache
+C:\Users\gabri\OneDrive\Desktop\CM\CornMeals\MinhaPrimeiraAplicacao.Utils\obj\Debug\net8.0\MinhaPrimeiraAplicacao.Utils.AssemblyInfo.cs
+C:\Users\gabri\OneDrive\Desktop\CM\CornMeals\MinhaPrimeiraAplicacao.Utils\obj\Debug\net8.0\MinhaPrimeiraAplicacao.Utils.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Desktop\CM\CornMeals\MinhaPrimeiraAplicacao.Utils\obj\Debug\net8.0\MinhaPrimeiraAplicacao.Utils.sourcelink.json
+C:\Users\gabri\OneDrive\Desktop\CM\CornMeals\MinhaPrimeiraAplicacao.Utils\obj\Debug\net8.0\MinhaPrimeiraAplicacao.Utils.dll
+C:\Users\gabri\OneDrive\Desktop\CM\CornMeals\MinhaPrimeiraAplicacao.Utils\obj\Debug\net8.0\refint\MinhaPrimeiraAplicacao.Utils.dll
+C:\Users\gabri\OneDrive\Desktop\CM\CornMeals\MinhaPrimeiraAplicacao.Utils\obj\Debug\net8.0\MinhaPrimeiraAplicacao.Utils.pdb
+C:\Users\gabri\OneDrive\Desktop\CM\CornMeals\MinhaPrimeiraAplicacao.Utils\obj\Debug\net8.0\ref\MinhaPrimeiraAplicacao.Utils.dll

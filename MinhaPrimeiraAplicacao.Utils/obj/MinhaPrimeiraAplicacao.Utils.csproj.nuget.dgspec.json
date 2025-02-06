@@ -1,37 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\OneDrive\\Desktop\\CM\\CornMeals\\MinhaPrimeiraAplicacao.Utils\\MinhaPrimeiraAplicacao.Utils.csproj": {}
+    "C:\\Users\\guilherme.zago\\Source\\Repos\\CornMeals\\MinhaPrimeiraAplicacao.Utils\\MinhaPrimeiraAplicacao.Utils.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\OneDrive\\Desktop\\CM\\CornMeals\\MinhaPrimeiraAplicacao.Utils\\MinhaPrimeiraAplicacao.Utils.csproj": {
+    "C:\\Users\\guilherme.zago\\Source\\Repos\\CornMeals\\MinhaPrimeiraAplicacao.Utils\\MinhaPrimeiraAplicacao.Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Desktop\\CM\\CornMeals\\MinhaPrimeiraAplicacao.Utils\\MinhaPrimeiraAplicacao.Utils.csproj",
+        "projectUniqueName": "C:\\Users\\guilherme.zago\\Source\\Repos\\CornMeals\\MinhaPrimeiraAplicacao.Utils\\MinhaPrimeiraAplicacao.Utils.csproj",
         "projectName": "MinhaPrimeiraAplicacao.Utils",
-        "projectPath": "C:\\Users\\gabri\\OneDrive\\Desktop\\CM\\CornMeals\\MinhaPrimeiraAplicacao.Utils\\MinhaPrimeiraAplicacao.Utils.csproj",
-        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\OneDrive\\Desktop\\CM\\CornMeals\\MinhaPrimeiraAplicacao.Utils\\obj\\",
+        "projectPath": "C:\\Users\\guilherme.zago\\Source\\Repos\\CornMeals\\MinhaPrimeiraAplicacao.Utils\\MinhaPrimeiraAplicacao.Utils.csproj",
+        "packagesPath": "C:\\Users\\guilherme.zago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\guilherme.zago\\Source\\Repos\\CornMeals\\MinhaPrimeiraAplicacao.Utils\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\guilherme.zago\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -39,17 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "MySql.Data": {
               "target": "Package",
@@ -72,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200-preview.0.25057.12/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

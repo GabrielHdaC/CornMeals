@@ -22,8 +22,6 @@ namespace ProjetoDHZMilhos.Controllers
             }
         };
 
-        // teste commit
-
         public IActionResult Index()
         {
             var model = new EspeciesMilhoModel() { EspeciesMilho = _EspeciesMilho };

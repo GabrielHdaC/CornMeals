@@ -138,7 +138,7 @@ namespace MinhaPrimeiraAplicacao.Utils.Entidades
             using (MySqlConnection conn = new MySqlConnection(DBConnection.CONNECTION_STRING))
             {
                 conn.Open();
-                var query = $"SELECT {string.Join(", ", Fields)} FROM CARROS";
+                var query = @$"SELECT {string.Join(", ", Fields)} FROM {TableName}";
                 var cmd = new MySqlCommand(query, conn);
 
                 var reader = cmd.ExecuteReader();
